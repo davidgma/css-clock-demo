@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Clock</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="javascript/index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <span class="material-symbols-outlined clock-icon">
+        nest_clock_farsight_analog
+      </span>
+      <h1>An Analogue Clock in CSS</h1>
+    </header>
+    <section>
+      <div class="clock">
+        <div class="clock-face" id="app">
+          <time datetime="12:00">12</time>
+          <time datetime="1:00">1</time>
+          <time datetime="2:00">2</time>
+          <time datetime="3:00">3</time>
+          <time datetime="4:00">4</time>
+          <time datetime="5:00">5</time>
+          <time datetime="6:00">6</time>
+          <time datetime="7:00">7</time>
+          <time datetime="8:00">8</time>
+          <time datetime="9:00">9</time>
+          <time datetime="10:00">10</time>
+          <time datetime="11:00">11</time>
+          <span class="arm seconds"></span>
+          <span class="arm minutes"></span>
+          <span class="arm hours"></span>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="feature">
+        <img class="icons" src="./icons/stackblitz.svg" alt="stackblitz logo" />
+        <p>
+          This is a <a href="https://stackblitz.com/edit/css-clock">stackblitz demonstration</a> of a clock implemented mostly in CSS. It is
+          taken from
+          <a
+            href="https://css-tricks.com/creating-a-clock-with-the-new-css-sin-and-cos-trigonometry-functions/"
+            >css-tricks.com</a
+          >
+          with the trick for restarting the animation from
+          <a
+            href="https://stackoverflow.com/questions/6268508/restart-animation-in-css3-any-better-way-than-removing-the-element"
+            >here</a
+          >.
+        </p>
+      </div>
+      <div class="feature">
+        <img
+          class="icons"
+          icon="github"
+          src="icons/github.svg"
+          alt="github logo"
+        />
+        <p>
+          All the working files are under the 'docs' folder. This is so that it can be easily served by Github Pages as a
+          <a href="https://davidgma.github.io/css-clock/">website</a>.
+        </p>
+      </div>
+    </section>
+   
+  </body>
+  <footer></footer>
+</html>
